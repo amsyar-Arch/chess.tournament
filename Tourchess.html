@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Online Chess Esport Tournament 2025</title>
+  <style>
+    /* ===== 1. BODY (Global Setting) ===== */
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background:url("2812005.jpg") no-repeat center center fixed;
+      background-size: cover;
+      color: white;
+    }
+
+    /* ===== 2. HEADER & NAV ===== */
+    header {
+      background: rgba(0,0,0,0.7);
+      text-align: center;
+      padding: 40px;
+    }
+    header h1 {
+      font-size: 3em;
+      margin: 0;
+    }
+    nav {
+      background: #111;
+      padding: 10px;
+      text-align: center;
+    }
+    nav a {
+      color: white;
+      margin: 0 15px;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    nav a:hover {
+      color: #f39c12; /* hover effect kuning */
+    }
+
+    /* ===== 3. WELCOME SECTION ===== */
+    #welcome {
+      color: white;
+      padding: 120px 20px;
+      margin: 30px;
+      border-radius: 10px;
+      text-align: center;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.5);
+      background: rgba(0,0,0,0.6);
+    }
+    #welcome h1 {
+      font-size: 3em;
+      margin: 0 0 20px 0;
+    }
+    #welcome p {
+      font-size: 1.5em;
+      margin: 0;
+    }
+
+    /* ===== 4. SECTIONS (About, Rules, Prizes, Signup, Contact) ===== */
+    section {
+      padding: 40px;
+      margin: 30px;
+      border-radius: 10px;
+      background: rgba(0,0,0,0.6);
+    }
+
+    #about, #rules, #prizes, #signup, #contact {
+      background: #0FB88D;
+    }
+
+    #about p {
+      font-size: 16px;
+      line-height: 1.6;
+    }
+
+    #rules ul {
+      list-style-type: square;
+      padding-left: 20px;
+    }
+
+    /* ===== 5. PRIZES ===== */
+    .prizes {
+      display: flex;
+      justify-content: center;
+      gap: 30px;
+      text-align: center;
+      flex-wrap: wrap;
+    }
+    .prize-card {
+      padding: 20px;
+      border-radius: 15px;
+      width: 200px;
+      font-weight: bold;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.5);
+    }
+    .prize-card.first { background: gold; color: black; }
+    .prize-card.second { background: silver; color: black; }
+    .prize-card.third { background: #8C7853; color: white; }
+
+    /* ===== 6. SIGNUP BUTTON ===== */
+    #signup { text-align: center; }
+    .button, #signup button {
+      display: inline-block;
+      padding: 10px 20px;
+      background: #f39c12;
+      color: black;
+      border-radius: 5px;
+      text-decoration: none;
+      font-weight: bold;
+      cursor: pointer;
+      border: none;
+    }
+    .button:hover, #signup button:hover {
+      background: #f1c40f;
+    }
+
+    /* ===== 7. FOOTER ===== */
+    footer {
+      text-align: center;
+      padding: 20px;
+      background: #111;
+    }
+
+    /* ===== 8. RESPONSIVE (HP view) ===== */
+    @media (max-width: 768px) {
+      .prizes {
+        flex-direction: column;
+        align-items: center;
+      }
+      #welcome h1 {
+        font-size: 2em;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Welcome Section -->
+  <section id="welcome">
+    <h1> Hi Welcome!</h1>
+    <p>Selamat datang ke Online Chess Esport Tournament 2025</p>
+  </section>
+
+  <!-- Navigation -->
+  <nav>
+    <a href="#about">About</a>
+    <a href="#rules">Rules</a>
+    <a href="#prizes">Prizes</a>
+    <a href="#signup">Sign Up</a>
+    <a href="#contact">Contact</a>
+  </nav>
+
+  <!-- About -->
+  <section id="about">
+    <h2>About Tournament</h2>
+    <p>
+      Online Chess Esport Tournament 2025 akan diadakan secara maya menggunakan platform
+      <b>Chess.com</b> & <b>Lichess.org</b>.
+    </p>
+    <ul>
+      <li>Menyatukan komuniti pelajar melalui Esport</li>
+      <li>Meningkatkan kemahiran berfikir & strategi</li>
+      <li>Platform kompetitif secara online</li>
+    </ul>
+    <p><b>Tarikh:</b> 20 – 22 September 2025</p>
+    <p><b>Platform:</b> Chess.com / Lichess.org (link room akan diberi selepas pendaftaran)</p>
+  </section>
+
+  <!-- Rules -->
+  <section id="rules">
+    <h2>Rules & Regulations</h2>
+    <ol>
+      <li>Pertandingan dijalankan <b>100% online</b>.</li>
+      <li>Peserta mesti mempunyai akaun <b>Chess.com / Lichess</b>.</li>
+      <li>Format: Swiss System, 5 round.</li>
+      <li>Masa per game: 10 minit per player.</li>
+      <li>Peserta wajib hadir di Zoom/Google Meet untuk pengesahan.</li>
+    </ol>
+  </section>
+
+  <!-- Prizes -->
+  <section id="prizes">
+    <h2>Prize Pool</h2>
+    <div class="prizes">
+      <div class="prize-card first">
+        <h3>1st Place</h3>
+        <p>RM 1000</p>
+      </div>
+      <div class="prize-card second">
+        <h3>2nd Place</h3>
+        <p>RM 600</p>
+      </div>
+      <div class="prize-card third">
+        <h3>3rd Place</h3>
+        <p>RM 300</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Signup -->
+  <section id="signup">
+    <h2>Sign Up</h2>
+    <p>Daftar sekarang untuk sertai kejohanan ini.</p>
+    <a class="button" href="login.html">Register Now</a>
+  </section>
+
+  <!-- Contact -->
+  <section id="contact">
+    <h2>Contact</h2>
+    <p>Email: esportchess2025@gmail.com</p>
+    <p>WhatsApp: +60 12-3456789</p>
+    <p>Discord: discord.gg/chess2025</p>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2025 Online Chess Esport Tournament | All Rights Reserved</p>
+  </footer>
+
+</body>
+</html>
